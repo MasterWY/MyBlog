@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+.header
+{
+	font-size:55px;
+	width:100%;
+	height:100px;
+	text-align:center;
+	background-color:#E0EEEE;
+	border:1px black solid;
+}
+.contanier
+{
+	width:100%;
+	height:90%;
+}
+.sider_bar
+{
+	width:29%;
+	height:100%;
+	float:left;
+	border:1px black solid;
+}
+.body
+{
+	width:70%;
+	height:100%;
+	float:left;
+}
+.navigation
+{
+	width:100%;
+	height:50px;
+}
+.head_icon
+{
+	width:100%;
+	height:300px;
+	text-align:center;
+	float:center;
+}
+.userBalance
+{
+	width:33%;
+	height:100px;
+	text-align:center;
+	float:left;
+	background-color:#E6E6FA;
+}
+.userFans
+{
+	width:33%;
+	height:100px;
+	text-align:center;
+	float:left;
+	background-color:#E6E6FA;
+}
+.userFocus
+{
+	width:33%;
+	height:100px;
+	text-align:center;
+	float:left;
+	background-color:#E6E6FA;
+}

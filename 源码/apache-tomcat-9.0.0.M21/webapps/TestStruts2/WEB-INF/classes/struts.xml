@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts2.enable.DynamicMethodInvocation" value="true"></constant>
+<package name="test1" namespace="/" extends="struts-default">
+<action name="login" class="com.niit.actions.LoginAction">
+<result name="success">/Redirect.jsp</result>
+<result name="failed">/Login.jsp</result>
+</action>
+<action name="register" class="com.niit.actions.RegisterAction">
+<result name="BlogZone">/WEB-INF/jsp/BlogZone.jsp</result>
+<result>/WEB-INF/jsp/Back_BlogZone.jsp</result>
+</action>
+<action name="login_out" class="com.niit.actions.Login_outAction">
+<result name="login_out">/Redirect.jsp</result>
+</action>
+<action name="Blogzone" class="com.niit.actions.BlogZoneAction">
+<result name="BlogZone">/WEB-INF/jsp/BlogZone.jsp</result>
+<result name="failed">/Login.jsp</result>
+</action>
+<action name="writeBlog" class="com.niit.actions.WriteBlogAction">
+<result name="writeblog">/WEB-INF/jsp/writeBlog.jsp</result>
+</action>
+<action name="edit" class="com.niit.actions.EditAction">
+<result name="edituif">/WEB-INF/jsp/editUIF.jsp</result>
+</action>
+<action name="fileupload" class="com.niit.actions.UifCgAction">
+<result>/WEB-INF/jsp/Back_BlogZone.jsp</result>
+<result name="failed">/show.jsp</result>
+</action>
+<action name="index" class="com.niit.actions.BlogRead">
+<result>/index.jsp</result>
+</action>
+<action name="writeblog" class="com.niit.actions.WirteBlogAction">
+<result>/WEB-INF/jsp/writeBlog.jsp</result>
+</action>
+<action name="publishblog" class="com.niit.actions.PublishBlogAction">
+<result>/WEB-INF/jsp/Back_BlogZone.jsp</result>
+</action>
+<action name="BlogRead" class="com.niit.actions.ReadBlogAction">
+<result>/WEB-INF/jsp/BlogRead.jsp</result>
+</action>
+<action name="delete" class="com.niit.actions.DeleteAction">
+<result>/WEB-INF/jsp/Back_BlogZone.jsp</result>
+</action>
+<action name="EditSkipBlog" class="com.niit.actions.EditSkipAction">
+<result name="editblog">/WEB-INF/jsp/EditBlog.jsp</result>
+</action>
+<action name="EditBlog" class="com.niit.actions.EditBlogAction">
+<result>/WEB-INF/jsp/Back_BlogZone.jsp</result>
+</action>
+<action name="like" class="com.niit.actions.LikeOrDislikeAction">
+<result name="blogread">/WEB-INF/jsp/BlogRead.jsp</result>
+</action>
+<action name="reward" class="com.niit.actions.RewardAction">
+<result name="blogread">/WEB-INF/jsp/BlogRead.jsp</result>
+</action>
+</package>
+</struts>    
